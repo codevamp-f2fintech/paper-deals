@@ -1,0 +1,25 @@
+#sign_in-Para,
+#sign_in-head {
+  text-align: center;
+}
+
+#sign_in-Para {
+  font-size: 14px;
+}
+
+.sgndata {
+  background: linear-gradient(259.26deg, #006efa, #07cdbe 84.05%) !important;
+}
+
+#head {
+  color: white !important;
+  margin-top: 3%;
+
+}
+
+#par {
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  margin: 8% 0;
+}

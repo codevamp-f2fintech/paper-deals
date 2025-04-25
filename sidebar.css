@@ -1,0 +1,125 @@
+.mine {
+  position: absolute;
+  top: 0;
+  z-index: 1000; /* Lower z-index than sidebar */
+  min-height: 10vh;
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.side-barr {
+  background: linear-gradient(45deg, #1078ff 0%, #00dfdf 70%);
+  width: 300px;
+  height: 210vh;
+  position: fixed;
+  top: 0;
+  left: -310px;
+  overflow: auto !important;
+  overflow-y: auto;
+  transition: 0.6s ease;
+  transition-property: left;
+  z-index: 2000; /* Higher z-index for visibility */
+}
+
+.side-barr::-webkit-scrollbar {
+  width: 0px;
+}
+
+.side-barr.active {
+  left: 0;
+}
+
+.side-barr .menu {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.side-barr .menu .itemm {
+  position: relative;
+  cursor: pointer;
+}
+
+.side-barr .menu .itemm a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  padding: 1px 33px;
+  line-height: 35px;
+}
+
+.side-barr .menu .itemm a:hover {
+  background: #fff;
+  color: #000;
+  transition: 0.3s ease;
+}
+
+.side-barr .menu .itemm i {
+  margin-right: 15px;
+  font-size: 16px !important;
+}
+
+.side-barr .menu .itemm a .dropdown {
+  position: absolute;
+  right: 0;
+  margin: 4px;
+  padding: 0 11px;
+  transition: 0.3s ease;
+}
+
+.side-barr .menu .itemm .sub-menu {
+  background: linear-gradient(45deg, #1078ff 0%, #00dfdf 70%);
+  display: none;
+}
+
+.side-barr .menu .itemm .sub-menu a {
+  padding-left: 80px;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.close-btn {
+  position: absolute;
+  color: #fff;
+  font-size: 23px;
+  right: 0px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.menu-btn {
+  top: 0;
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  margin: 25px;
+  cursor: pointer;
+}
+
+/* Media Query for screen resolutions between 750px and 1020px */
+@media (min-width: 750px) and (max-width: 1020px) {
+  .side-barr .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .side-barr .menu .itemm {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1500; /* Higher z-index than banner text but lower than sidebar */
+}
