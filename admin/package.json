@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "composer": "^4.1.0",
-    "mpdf": "^1.0.0"
-  }
-}
